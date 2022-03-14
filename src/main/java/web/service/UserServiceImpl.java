@@ -24,14 +24,12 @@ public class UserServiceImpl implements UserService{
     }
 
     @Transactional
-
     @Override
     public User findById(Long id) {
         return userDao.findById(id);
     }
 
     @Transactional
-
     @Override
     public void add(User user) {
         userDao.add(user);
